@@ -47,37 +47,63 @@ table tr td input{
     color: var(--pink);
 }
 
-/* css for study panel */
-.study_panel{
+/* Navigation bar for the study panel*/
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    }
-video{
-    background-color: black;
-}
-.notes{
-    background-color: yellow;
-    float: right;
-    
-}
-.video_container{
-    flex: 1 1 40rem;
-    position: relative;
-}
-.video_container video{
-    width: 100%;
-    border: 1.5rem solid white;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgb(73, 72, 72);
+  }
+
+  .navbar li {
+    margin-right: 10px;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .navbar li a:hover {
+    background-color: #005A9E;
+  }
+
+  /* Content area */
+  .content {
+    padding: 20px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    width: 250px;
     height: 100%;
-    object-fit: cover;
-}
-.video_container h3{
-    position: absolute;
-    top: 50%; transform: translateY(-50%);
-    font-size: 3rem;
-    background: #fff;
-    width: 100%;
-    padding: 1rem 2rem;
-    text-align: center;
-    mix-blend-mode: screen;
-}
+    background-color: #f1f1f1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  /* right side nav */
+  .notes_box{
+    width: 200px;
+    height: 500px;
+  }
+
+  .left-sidebar {
+    left: 0;
+  }
+  .cance-btn{
+    right: 0;
+  }
+
+  .right-sidebar {
+    right: 0;
+  }
+
+  /* Content styling */
+  .main-content {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
