@@ -1,0 +1,75 @@
+#videoThumbnails {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px;
+    background: #eee;
+}
+#videoThumbnails img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* styles.css */
+
+/* Style for the video thumbnails */
+#videoThumbnails .videoWrapper img {
+    width: 120px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Show pointer cursor when hovering over thumbnails */
+    margin-right: 10px; /* Add some spacing between thumbnails */
+}
+/* styles.css */
+
+/* Style for the video thumbnails */
+.thumbnailVideo {
+    width: 200px; /* Set width */
+    height: 100px; /* Set height */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.transcript-section {
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid #ccc; /* Add border to separate video and transcript sections */
+    width: 780px; /* Set width */
+    height: 340px;
+}
+.section {
+    margin-bottom: 20px;
+}
+
+.section-content {
+    display: none;
+    padding: 10px;
+}
+
+.section-header {
+    cursor: pointer;
+}
+
+.upload-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form items to the left */
+}
+
+.text-input,
+#textInput {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#textInput {
+    resize: vertical; /* Allow vertical resizing */
+}
